@@ -20,11 +20,11 @@ if (!studentName || !schoolName  || !course ){
 formMessage.textContent = ""
 
 
-cardStudentName.textContent = studentName;
-cardSchoolName.textContent = schoolName;
-cardCourse.textContent = course;
+cardStudentName.textContent = `Student Name ${studentName}`;
+cardSchoolName.textContent = `School Name :: ${schoolName}`;
+cardCourse.textContent = `Course :: ${course}`;
 const randomDigit = Math.floor(1000 + Math.random() * 9000);
-cardNumber.textContent = `Card No: ${randomDigit}`;
+cardNumber.textContent = `Card No :: ${randomDigit}`;
 
 cardResult.hidden = false;
 })
